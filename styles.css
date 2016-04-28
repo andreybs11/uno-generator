@@ -1,0 +1,60 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+body.black { background-color: black; }
+body.red { background-color: red; }
+body.yellow { background-color: yellow; }
+body.green { background-color: green; }
+body.blue { background-color: blue; }
+
+.circle, .time, .value {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.time {
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+    top: 30px;
+}
+
+.yellow .time {
+    color: black;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    height: 260px;
+    margin-left: -210px;
+    margin-top: -110px;
+    left: 50%;
+    top: 50%;
+    transform: rotate(-50deg);
+    width: 420px;
+}
+
+.black .circle {
+    background-color: red;
+}
+
+.value {
+    font-size: 220px;
+    left: 50%;
+    line-height: 360px;
+    margin-left: -170px;
+    margin-top: -160px;
+    top: 50%;
+    vertical-align: middle;
+    width: 340px;
+}
